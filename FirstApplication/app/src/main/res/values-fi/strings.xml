@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ensimmäinen sovellus</string>
+    <string name="button_clicked_txt">Kilkkaa Minua!</string>
+    <string name="button_txt">Painiketta klikattu!</string>
+    <string name="landscape_txt">Vaakasuunta</string>
+    <string name="portrait_txt">Muotokuva suunta</string>
+</resources>
