@@ -24,7 +24,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="3"
             android:adjustViewBounds="true"
             android:contentDescription="@string/imgViewDescription"
             android:scaleType="centerCrop"
@@ -46,7 +46,7 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="0dp"
                 android:layout_weight="1"
                 android:gravity="center">
 
@@ -57,8 +57,7 @@
                     android:layout_weight="1"
                     android:autoSizeTextType="uniform"
                     android:onClick="numberInput"
-                    android:text="@string/_1"
-                    android:textAlignment="center" />
+                    android:text="@string/_1" />
 
                 <Button
                     android:id="@+id/button02"
@@ -67,18 +66,16 @@
                     android:layout_weight="1"
                     android:autoSizeTextType="uniform"
                     android:onClick="numberInput"
-                    android:text="@string/_2"
-                    android:textAlignment="center" />
+                    android:text="@string/_2" />
 
                 <Button
                     android:id="@+id/button03"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:autoSizeTextType="uniform"
                     android:onClick="numberInput"
                     android:text="@string/_3"
-                    android:textAlignment="center" />
+                    android:autoSizeTextType="uniform" />
 
                 <Button
                     android:id="@+id/buttonPlus"
@@ -88,8 +85,7 @@
                     android:autoSizeTextType="uniform"
                     android:backgroundTint="#FFB74D"
                     android:onClick="operator"
-                    android:text="@string/plus"
-                    android:textAlignment="center" />
+                    android:text="@string/plus" />
             </TableRow>
 
             <TableRow
@@ -105,8 +101,7 @@
                     android:layout_weight="1"
                     android:autoSizeTextType="uniform"
                     android:onClick="numberInput"
-                    android:text="@string/_4"
-                    android:textAlignment="center" />
+                    android:text="@string/_4" />
 
                 <Button
                     android:id="@+id/button05"
@@ -115,8 +110,7 @@
                     android:layout_weight="1"
                     android:autoSizeTextType="uniform"
                     android:onClick="numberInput"
-                    android:text="@string/_5"
-                    android:textAlignment="center" />
+                    android:text="@string/_5" />
 
                 <Button
                     android:id="@+id/button06"
@@ -125,8 +119,7 @@
                     android:layout_weight="1"
                     android:autoSizeTextType="uniform"
                     android:onClick="numberInput"
-                    android:text="@string/_6"
-                    android:textAlignment="center" />
+                    android:text="@string/_6" />
 
                 <Button
                     android:id="@+id/buttonMinus"
@@ -136,8 +129,7 @@
                     android:autoSizeTextType="uniform"
                     android:backgroundTint="#FFB74D"
                     android:onClick="operator"
-                    android:text="@string/minus"
-                    android:textAlignment="center" />
+                    android:text="@string/minus" />
             </TableRow>
 
             <TableRow
@@ -153,8 +145,7 @@
                     android:layout_weight="1"
                     android:autoSizeTextType="uniform"
                     android:onClick="numberInput"
-                    android:text="@string/_7"
-                    android:textAlignment="center" />
+                    android:text="@string/_7" />
 
                 <Button
                     android:id="@+id/button08"
@@ -163,8 +154,7 @@
                     android:layout_weight="1"
                     android:autoSizeTextType="uniform"
                     android:onClick="numberInput"
-                    android:text="@string/_8"
-                    android:textAlignment="center" />
+                    android:text="@string/_8" />
 
                 <Button
                     android:id="@+id/button09"
@@ -173,19 +163,17 @@
                     android:layout_weight="1"
                     android:autoSizeTextType="uniform"
                     android:onClick="numberInput"
-                    android:text="@string/_9"
-                    android:textAlignment="center" />
+                    android:text="@string/_9" />
 
                 <Button
                     android:id="@+id/buttonMultiply"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:autoSizeTextType="uniform"
                     android:backgroundTint="#FFB74D"
                     android:onClick="operator"
-                    android:text="@string/multiply"
-                    android:textAlignment="center"
-                    android:autoSizeTextType="uniform" />
+                    android:text="@string/multiply" />
             </TableRow>
 
             <TableRow
@@ -202,8 +190,7 @@
                     android:autoSizeTextType="uniform"
                     android:backgroundTint="#FF8A65"
                     android:onClick="cancel"
-                    android:text="@string/cancel"
-                    android:textAlignment="center" />
+                    android:text="@string/cancel" />
 
                 <Button
                     android:id="@+id/button0"
@@ -212,8 +199,7 @@
                     android:layout_weight="1"
                     android:autoSizeTextType="uniform"
                     android:onClick="numberInput"
-                    android:text="@string/_0"
-                    android:textAlignment="center" />
+                    android:text="@string/_0" />
 
                 <Button
                     android:id="@+id/buttonEquals"
@@ -223,8 +209,7 @@
                     android:autoSizeTextType="uniform"
                     android:backgroundTint="#AED581"
                     android:onClick="equals"
-                    android:text="@string/equals"
-                    android:textAlignment="center" />
+                    android:text="@string/equals" />
 
                 <Button
                     android:id="@+id/buttonDivide"
@@ -234,8 +219,7 @@
                     android:autoSizeTextType="uniform"
                     android:backgroundTint="#FFB74D"
                     android:onClick="operator"
-                    android:text="@string/divide"
-                    android:textAlignment="center" />
+                    android:text="@string/divide" />
 
             </TableRow>
         </TableLayout>
