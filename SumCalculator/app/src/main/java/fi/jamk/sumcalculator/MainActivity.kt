@@ -74,12 +74,12 @@ class MainActivity : AppCompatActivity() {
             if( text.last().toString().contains(Regex("[+\\-*\\/]"))) {
                 textView.text = text.substring(0,text.length-1)
             }
-            //else if operation waiting
-            else if(operator.isNotBlank()){
-                doMath()
-            }
-            //else just be ready to input new number
             else {
+                //else if operation waiting
+                if(operator.isNotBlank()) {
+                    doMath()
+                }
+                //be ready to input new number
                 oldNumber = currentNumber
                 currentNumber = 0
             }
