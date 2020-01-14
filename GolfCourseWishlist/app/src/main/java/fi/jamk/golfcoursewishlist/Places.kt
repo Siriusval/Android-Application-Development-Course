@@ -1,3 +1,8 @@
+/**
+ * Places class
+ * Contain an array with name of places
+ * (Warning : Not a collection of Piece Objects)
+ */
 package fi.jamk.golfcoursewishlist
 
 class Places {
@@ -16,7 +21,10 @@ class Places {
             "Turtle Bay"
         )
 
-        // return places
+        /**
+         * return places
+         * Generate Piece objects and return them in an ArrayList
+         */
         fun placeList(): ArrayList<Place> {
             val list = ArrayList<Place>()
             for (i in placeNameArray.indices) {
