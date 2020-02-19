@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="current_weather_description">Current weather</string>
+    <string name="city">City:</string>
+    <string name="city_placeholder">Type city name...</string>
+    <string name="dialog_title">Add new city</string>
+    <string name="dialog_message">Please enter the name of a city</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_cancel">Cancel</string>
+</resources>
