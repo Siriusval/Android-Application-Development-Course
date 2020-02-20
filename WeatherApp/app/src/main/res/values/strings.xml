@@ -7,4 +7,5 @@
     <string name="dialog_message">Please enter the name of a city</string>
     <string name="dialog_ok">Ok</string>
     <string name="dialog_cancel">Cancel</string>
+    <string name="refresh_description">Refresh Button</string>
 </resources>

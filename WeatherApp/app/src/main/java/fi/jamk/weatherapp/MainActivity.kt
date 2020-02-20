@@ -22,13 +22,14 @@ import java.time.format.DateTimeFormatter
 
 class MainActivity : AppCompatActivity(), AddCityDialogFragment.AddDialogListener {
 
-    // example call is : https://api.openweathermap.org/data/2.5/weather?q=Jyväskylä&APPID=YOUR_API_KEY&units=metric&lang=fi
-    private val API_LINK: String = "https://api.openweathermap.org/data/2.5/weather?q="
-    private val API_ICON: String = "https://openweathermap.org/img/w/"
-    private val API_KEY: String = "9aaa13dd0c59e415d16ce752ffa32c78"
 
     companion object {
         var forecasts: MutableList<Forecast> = mutableListOf()
+
+        // example call is : https://api.openweathermap.org/data/2.5/weather?q=Jyväskylä&APPID=YOUR_API_KEY&units=metric&lang=fi
+        val API_LINK: String = "https://api.openweathermap.org/data/2.5/weather?q="
+        val API_ICON: String = "https://openweathermap.org/img/w/"
+        val API_KEY: String = "9aaa13dd0c59e415d16ce752ffa32c78"
 
     }
 
@@ -84,7 +85,7 @@ class MainActivity : AppCompatActivity(), AddCityDialogFragment.AddDialogListene
 
 
     // load forecast
-    private fun loadWeatherForecast(city: String) {
+    fun loadWeatherForecast(city: String) {
         // url for loading
         val url = "$API_LINK$city&APPID=$API_KEY&units=metric&lang=fi"
 
@@ -142,7 +143,7 @@ class MainActivity : AppCompatActivity(), AddCityDialogFragment.AddDialogListene
         queue.add(jsonObjectRequest)
     }
 
-    override fun onDialogPositiveClick(newCity: String) {
+    override fun onDialogPositiveClick(item: String) {
 
         // Create a Handler Object
         val handler = Handler(Handler.Callback {
@@ -150,14 +151,14 @@ class MainActivity : AppCompatActivity(), AddCityDialogFragment.AddDialogListene
             Toast.makeText(applicationContext, it.data.getString("message"), Toast.LENGTH_SHORT)
                 .show()
 
-            cities.add(newCity)
+            cities.add(item)
             true
         })
         // Create a new Thread to insert data to database
         Thread(Runnable {
 
             //load forecast in mutablelist, which triggers PageViewModel update
-            loadWeatherForecast(newCity)
+            loadWeatherForecast(item)
             val message = Message.obtain()
             message.data.putString("message", "Item added to list!")
             handler.sendMessage(message)
