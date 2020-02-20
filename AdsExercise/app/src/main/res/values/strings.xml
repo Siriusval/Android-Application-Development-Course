@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AdsExercise</string>
+    <string name="title">Ads Test App</string>
+    <string name="banner">Banner</string>
+    <string name="largeBanner">Large Banner</string>
+    <string name="mediumRectangle">Medium Rectangle</string>
+    <string name="fullBanner">Full Banner</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="smartBanner">Smart Banner</string>
+    <string name="rewarded">Test rewarded ad</string>
+    <string name="testButton">Test</string>
+</resources>
