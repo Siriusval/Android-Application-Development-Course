@@ -1,2 +1,7 @@
-thread-example
 .idea/
+.vscode/
+.gradle/
+build.
+*.iml
+*.mp4
+*.csv
